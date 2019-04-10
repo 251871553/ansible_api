@@ -4,7 +4,7 @@ import pymysql
 class Mariadb_api(object):
     def __init__(self):
         try:
-            self.conn = pymysql.connect(host='192.168.3.131', user='root', passwd='', db='cmdb', port=3306, charset="utf8")
+            self.conn = pymysql.connect(host='10.11.6.64', user='admin', passwd='ZTc2YTUyNm_admin', db='ansible_inv', port=3306, charset="utf8")
         except pymysql.Error as e:
             print("Mysql Error %d: %s" % (e.args[0], e.args[1]))
 
@@ -16,6 +16,7 @@ class Mariadb_api(object):
         rows = self.cur.fetchall()
 #        print(rows)
         self.cur.close()
+        return rows
         #sql ='insert into userinfo (user,pwd) values (%s,%s);'
         #name = 'wuli'
         #pwd = '123456789'

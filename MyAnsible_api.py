@@ -13,7 +13,6 @@ import ansible.constants
  
 class ResultCallback(CallbackBase):
     def __init__(self, *args, **kwargs):
-        # super(ResultsCollector, self).__init__(*args, **kwargs)
         self.host_ok = {}
         self.host_unreachable = {}
         self.host_failed = {}
