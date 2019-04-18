@@ -55,7 +55,7 @@ class AnsibleApi(object):
                               verbosity=5,
                               ack_pass=None,
                               module_path=None,
-                              forks=5,
+                              forks=8,
                               become=None,
                               become_method=None,
                               become_user=None,

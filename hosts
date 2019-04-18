@@ -1,6 +1,0 @@
-[vm]
-#10.11.12.11 ansible_ssh_port=22	ansible_ssh_user=vmuser	ansible_ssh_pass=CD(pRoN@2  ansible_ssh_host=10.11.12.11
-10.11.12.17 ansible_ssh_port=22	ansible_ssh_user=vmuser	ansible_ssh_pass=BZ@vmuser1234 ansible_ssh_host=10.11.12.17
-[my]
-10.11.12.44 ansible_ssh_port=22	ansible_ssh_user=root ansible_ssh_pass=123456
-10.11.14.51 ansible_ssh_port=22	ansible_ssh_user=vmuser	ansible_ssh_pass=123456

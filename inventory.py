@@ -1,10 +1,12 @@
-#!/bin/env python
+#!/usr/bin/env python
 #coding:utf8
 import json
 import sys
-from MyMariadb_api import Mariadb_api
+#from mariadb import mariadb_api
 
+from MyMariadb_api import Mariadb_api
 mymariadb=Mariadb_api()
+
 
 
 def group():
@@ -23,8 +25,9 @@ def all():
         group_name=group_name
         tmp_list=[]
         #select_sql_ip="SELECT  ip   FROM jiqi_all where group_type='%s'  and id >=498 and id <=502;" % group_name
-       # select_sql_ip="SELECT  ipaddr   FROM jiqi_all where group_type='%s' and conn_code=0  and id >=1 and id <=100;" % group_name
-        select_sql_ip="SELECT  ipaddr   FROM jiqi_all where group_type='%s' and conn_code=0  and id >=100 and id <=200;" % group_name
+        #select_sql_ip="SELECT  ipaddr   FROM jiqi_all where group_type='%s'  and id >=1 and id <=500;" % group_name
+        select_sql_ip="SELECT  ipaddr   FROM jiqi_all where group_type='%s' and conn_code=0   and id >=1 and id <=8;" % group_name
+        #select_sql_ip="SELECT  ipaddr   FROM jiqi_all where group_type='%s' and conn_code=0 ;" % group_name
        # select_sql_ip="SELECT  ip   FROM jiqi_all where group_type='%s';" % group_name
         ip_info = mymariadb.select_db(select_sql_ip)
         for i in ip_info:
